@@ -1,0 +1,28 @@
+{
+  "name": "tsiklon",
+  "version": "1.0.0",
+  "description": "Starter kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/yacine/Tsiklon.git",
+  "keywords": [
+    "starter kit",
+    "gulp",
+    "sass",
+    "pug"
+  ],
+  "author": "Yacine Benz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yacine/Tsiklon/issues"
+  },
+  "homepage": "https://github.com/yacine/Tsiklon#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.2",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
