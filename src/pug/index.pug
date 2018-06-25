@@ -6,10 +6,15 @@ html(lng='en')
     meta(name="viewport", content="width=device-width, initial-scale=1")
     link(href='assets/css/core.css', rel='stylesheet')
   body
-    SVG(class='icon icon-coffee')
-        use(xlink:href='#icn-coffee')
+    .icons
+        SVG(class='icon icon-coffee')
+            use(xlink:href='#icn-coffee')
 
+        SVG(class='icon icon-coffee-alt')
+            use(xlink:href='#icn-coffee')
 
+        
+        SVG(class='icon icon-pizza-alt')
+            use(xlink:href='#icn-pizza')
 
     include includes/icons.pug
-    

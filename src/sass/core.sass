@@ -1,5 +1,10 @@
 $img-path: '../img/'
 
+*
+    margin: 0
+    padding: 0
+    box-sizing: content-box
+
 html
   font-size: 16px
 
@@ -9,15 +14,40 @@ body
   display: flex
   align-items: center
   justify-content: center
+  background-color: #E2E7E9
 
 .hidden
     display: none
 
+.icons
+    display: flex
+    align-items: center
+    justify-content: space-between
 
 .icon
-    width: 100px
-    height: 100px
+    $size: 32px
+    width: $size
+    height: $size
+    border-radius: $size*.75
+    box-shadow: 0px 0px 15px 0px rgba(194, 198, 199, 0.75)
+    padding: $size/2
+    margin: $size/2
+    background-color: #fff
+
+@mixin icon-colors($fallback: black)
+    fill: $fallback
+    @content
 
 .icon-coffee
-    --color-1: teal
-    --color-2: blue
+    @include icon-colors(#5C5675)
+        --smoke: #CA7D1A
+        --cup: #5C5675
+
+.icon-coffee-alt
+    --smoke: #1AA4CA
+    --cup: #755956
+
+.icon-pizza-alt
+    --shape1: #FF774D
+    --shape2: #F45E0C
+    --olivs: #272425
