@@ -34,16 +34,16 @@ body
     margin: $size/2
     background-color: #fff
 
-@mixin icon-colors($fallback: black)
+=icon-colors($fallback: black)
     fill: $fallback
     @content
 
 .icon-coffee
-    @include icon-colors(#5C5675)
+    +icon-colors(#5C5675)
         --smoke: #CA7D1A
         --cup: #5C5675
     &:hover
-        @include icon-colors(#755956)
+        +icon-colors(#755956)
             --smoke: teal
             --cup: #FF774D
 
